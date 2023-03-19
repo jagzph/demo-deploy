@@ -37,14 +37,14 @@ on:
       - "main"
 
 env:
-  AWS_REGION: us-west-2                  # set this to your preferred AWS region, e.g. us-west-2
+  AWS_REGION: us-west-2                         # set this to your preferred AWS region, e.g. us-west-2
   #ECR_REPOSITORY: 520682180968.dkr.ecr.us-west-2.amazonaws.com/demo-deploy-ecr   # set this to your Amazon ECR repository name
-  ECR_REPOSITORY: demo-deploy-ecr   # set this to your Amazon ECR repository name
-  ECS_SERVICE: demo-deploy                # set this to your Amazon ECS service name
-  ECS_CLUSTER: demo-deploy                 # set this to your Amazon ECS cluster name
-  ECS_TASK_DEFINITION: demo-deploy-taskdef    # set this to the path to your Amazon ECS task definition                                           # file, e.g. .aws/task-definition.json
-  CONTAINER_NAME: demo-deploy           # set this to the name of the container in the
-                                               # containerDefinitions section of your task definition
+  ECR_REPOSITORY: demo-deploy-ecr               # set this to your Amazon ECR repository name
+  ECS_SERVICE: demo-deploy-servoce              # set this to your Amazon ECS service name
+  ECS_CLUSTER: demo-deploy-cluster              # set this to your Amazon ECS cluster name
+  ECS_TASK_DEFINITION: demo-deploy-taskdef      # set this to the path to your Amazon ECS task definition                                           # file, e.g. .aws/task-definition.json
+  CONTAINER_NAME: demo-deploy                   # set this to the name of the container in the
+                                                # containerDefinitions section of your task definition
 
 permissions:
   id-token: write
