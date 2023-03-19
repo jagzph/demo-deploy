@@ -27,6 +27,11 @@
 name: Deploy to Amazon ECS
 
 on:
+  workflow_dispatch:
+    inputs:
+       tags:
+    description: 'Run Demo-deploy'  
+    
   push:
     branches:
       - "main"
